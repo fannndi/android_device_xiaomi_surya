@@ -23,6 +23,8 @@ $(call inherit-product-if-exists, vendor/xiaomi/surya-miuicamera/miuicamera.mk)
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+WITH_ADB_INSECURE := true
+
 # Audio
 PRODUCT_PACKAGES += \
     sku_surya_audio_symlink
