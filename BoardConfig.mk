@@ -28,6 +28,9 @@ TARGET_OTA_ASSERT_DEVICE := surya,karna
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+# Rules
+BUILD_BROKEN_DUP_RULES := true
+
 # Kernel
 TARGET_KERNEL_VERSION ?= 4.14
 TARGET_KERNEL_DIR ?= kernel/xiaomi/surya
