@@ -15,5 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_surya.mk
+    $(LOCAL_DIR)/aosp_surya.mk \
+    $(LOCAL_DIR)/aosp_surya_hwasan.mk \
+    $(LOCAL_DIR)/statix_surya.mk
 
+COMMON_LUNCH_CHOICES := \
+    aosp_surya-trunk_staging-userdebug \
+    statix_surya-trunk_staging-userdebug
