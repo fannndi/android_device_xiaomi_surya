@@ -121,5 +121,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+PRODUCT_SOONG_NAMESPACES += \
+    device/xiaomi/surya \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/qcom/sm8150/display \
+    hardware/qcom/sm8150/gps \
+    hardware/qcom/wlan \
+    hardware/qcom/wlan/legacy \
+    hardware/qcom-caf/bootctrl \
+    system/chre/host/hal_generic \
+    vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
